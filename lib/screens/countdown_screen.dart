@@ -102,7 +102,7 @@ class _CountdownScreenState extends State<CountdownScreen> {
           // If guest exceeds group size, move to next host
           if (_currentGuest > widget.settings.groupSize) {
             _currentGuest = 1;
-          };
+          }
           _messageCount = 2;
         }
               // If we've completed all hosts
@@ -323,13 +323,13 @@ class _CountdownScreenState extends State<CountdownScreen> {
         title: const Text(
           textAlign: TextAlign.center,
           'TIME IS UP',
-                style: const TextStyle(fontSize: 40),),
+                style: TextStyle(fontSize: 40),),
         content: const SingleChildScrollView(
           child: ListBody(
             children: <Widget>[
               //Text(textAlign: TextAlign.center,'TIME IS UP',),
               Text(textAlign: TextAlign.center, 'Switch Shark',
-                style: const TextStyle(fontSize: 26),),
+                style: TextStyle(fontSize: 26),),
             ],
           ),
         ),
@@ -355,13 +355,13 @@ class _CountdownScreenState extends State<CountdownScreen> {
         title: const Text(
           textAlign: TextAlign.center,
           'NEXT ROUND',
-                style: const TextStyle(fontSize: 40),),
+                style:  TextStyle(fontSize: 40),),
         content: const SingleChildScrollView(
           child: ListBody(
             children: <Widget>[
               //Text(textAlign: TextAlign.center, 'NEXT ROUND',),
               Text(textAlign: TextAlign.center, 'Rotate in the next Shark Bait',
-                style: const TextStyle(fontSize: 26),),
+                style:  TextStyle(fontSize: 26),),
             ],
           ),
         ),
@@ -385,14 +385,14 @@ class _CountdownScreenState extends State<CountdownScreen> {
       builder: (BuildContext context) {
         return AlertDialog(
           title: const Text(textAlign: TextAlign.center,'ROUND OVER',
-                style: const TextStyle(fontSize: 40),),
+                style:  TextStyle(fontSize: 40),),
           content: const SingleChildScrollView(
             child: ListBody(
               children: <Widget>[
                 Text(textAlign: TextAlign.center,'NEXT POSITION',
-                style: const TextStyle(fontSize: 26),),
+                style:  TextStyle(fontSize: 26),),
                 Text(textAlign: TextAlign.center,'Start next round.',
-                style: const TextStyle(fontSize: 16),),
+                style: TextStyle(fontSize: 16),),
               ],
             ),
           ),

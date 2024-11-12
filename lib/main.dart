@@ -26,7 +26,7 @@ class TimerApp extends StatelessWidget {
       //home: const SetupScreen(),
             initialRoute: '/',
             routes: {
-              '/': (context) => SetupScreen(),
+              '/': (context) => const SetupScreen(),
               '/rules': (context) => const RulesScreen(),
               '/contact': (context) => const ContactScreen(),
             },
