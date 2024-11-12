@@ -1,0 +1,29 @@
+name: shark_bait
+description: Created to assist with Shark Bait groups during wrestling practice.
+publish_to: 'none'
+#learn : sharkbait
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  mailto: ^2.0.0
+#  flutter_native_splash: ^2.0.1+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+
+#flutter_native_splash:
+ # color: "#B3B3B3"
+ # image: assets/sharkSplash.png
+
+flutter:
+  uses-material-design: true
