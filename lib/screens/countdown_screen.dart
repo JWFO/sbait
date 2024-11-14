@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../models/timer_settings.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 class CountdownScreen extends StatefulWidget {
   final TimerSettings settings;
@@ -23,12 +24,23 @@ class _CountdownScreenState extends State<CountdownScreen> {
   //int _completedPairs = 0;
   bool _roundComplete = false;
   int _messageCount = 0;
+  final AudioPlayer _audioPlayer = AudioPlayer();
 
   @override
   void initState() {
     super.initState();
     _timeLeft = widget.settings.duration;
     _initializePositions();
+  }
+
+  // Function to play the custom sound
+  void _playSound() async {
+    try {
+      // Load and play the sound file
+      await _audioPlayer.play(AssetSource('sounds/buzzer.mp3'));
+    } catch (e) {
+      //print("Error playing sound: $e");
+    }
   }
 
   void _initializePositions() {
@@ -196,6 +208,7 @@ class _CountdownScreenState extends State<CountdownScreen> {
           }
         }
       }
+      _playSound;
     }
   }
 
@@ -413,6 +426,7 @@ class _CountdownScreenState extends State<CountdownScreen> {
   void dispose() {
     if (_isRunning) {
       _timer.cancel();
+      _audioPlayer.dispose();
     }
     super.dispose();
   }
