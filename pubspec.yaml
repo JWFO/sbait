@@ -13,7 +13,7 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   mailto: ^2.0.0
-  flutter_native_splash: ^2.4.2
+ # flutter_native_splash: ^2.4.2
 
 dev_dependencies:
   flutter_test:
@@ -21,9 +21,9 @@ dev_dependencies:
   flutter_lints: ^2.0.0
 
 
-flutter_native_splash:
-  color: "#B3B3B3"
-  image: assets/splash.png
+#flutter_native_splash:
+ # color: "#B3B3B3"
+ # image: assets/splash.png
   #branding: assets/dart.png
   #branding_mode: bottom
   #branding_bottom_padding:24
