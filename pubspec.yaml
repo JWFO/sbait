@@ -33,3 +33,7 @@ android_12:
 
 flutter:
   uses-material-design: true
+  assets: 
+    - assets/splash.png
+    
+

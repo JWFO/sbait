@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'screens/splash_screen.dart';
 import 'screens/setup_screen.dart';
 import 'screens/rules_screen.dart';
 import 'screens/contact_screen.dart';
@@ -9,27 +10,29 @@ void main() {
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
   ]);
-  runApp(const TimerApp());
+  runApp(const SharkBaitApp());
 }
 
-class TimerApp extends StatelessWidget {
-  const TimerApp({super.key});
+class SharkBaitApp extends StatelessWidget {
+  const SharkBaitApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Group Timer',
+      title: 'Shark Bait',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      //home: const SetupScreen(),
+      //home: SplashScreen(),
             initialRoute: '/',
             routes: {
-              '/': (context) => const SetupScreen(),
+              '/': (context) => SplashScreen(),
+              '/Timer Setup': (context) => const SetupScreen(),
               '/rules': (context) => const RulesScreen(),
               '/contact': (context) => const ContactScreen(),
             },
+            
     );
   }
 }
