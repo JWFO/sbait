@@ -8,7 +8,7 @@
 PRODUCT_NAME = sharkbait
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.example.sharkbait
+PRODUCT_BUNDLE_IDENTIFIER = com.w859.sharkbait
 
 // The copyright displayed in application information
 PRODUCT_COPYRIGHT = Copyright © 2024 com.example. All rights reserved.

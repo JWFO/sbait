@@ -1,4 +1,4 @@
-# sharkbait
+# Shark Bait
 
 A new Flutter project.
 

@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:vibration/vibration.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../models/timer_settings.dart';
@@ -64,7 +65,8 @@ class _CountdownScreenState extends State<CountdownScreen> {
   void _handleTimerComplete() {
     _timer.cancel();
     if (widget.settings.alarmEnabled) {
-      HapticFeedback.heavyImpact();
+      Vibration.vibrate(pattern: [300, 500, 300, 1500], amplitude: 200);
+      //HapticFeedback.heavyImpact();
 
     }
     _nextPair();

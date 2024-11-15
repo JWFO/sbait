@@ -1,4 +1,4 @@
-package com.example.sharkbait
+package com.w859.sharkbait
 
 import io.flutter.embedding.android.FlutterActivity
 
