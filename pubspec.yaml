@@ -1,7 +1,7 @@
 name: shark_bait
 description: Created to assist with Shark Bait groups during wrestling practice.
 publish_to: 'none'
-#learn : sharkbait
+#learn : Shark Bait
 
 version: 1.0.0+1
 
@@ -14,6 +14,9 @@ dependencies:
   cupertino_icons: ^1.0.2
   mailto: ^2.0.0
  # flutter_native_splash: ^2.4.2
+  firebase_core: ^3.8.0
+  vibration: ^2.0.1
+  firebase_analytics: ^11.3.5
 
 dev_dependencies:
   flutter_test:

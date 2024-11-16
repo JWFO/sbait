@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "102832022869",
+    "project_id": "shark-bait-w859",
+    "storage_bucket": "shark-bait-w859.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102832022869:android:ebbb10f10dbf149bb9bbdc",
+        "android_client_info": {
+          "package_name": "com.w859.sb"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRmD8dvGMBL_z60d1hUmZxY69K4Udkc0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102832022869:android:6a4f148fff8eea0db9bbdc",
+        "android_client_info": {
+          "package_name": "com.w859.sharkbait"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRmD8dvGMBL_z60d1hUmZxY69K4Udkc0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
