@@ -67,9 +67,7 @@ class _CountdownScreenState extends State<CountdownScreen> {
   void _handleTimerComplete() {
     _timer.cancel();
     if (widget.settings.alarmEnabled) {
-      Vibration.vibrate(pattern: [300, 500, 300, 1500], amplitude: 200);
-      //HapticFeedback.heavyImpact();
-
+      Vibration.vibrate(pattern: [500, 1500, 500, 4000, 500, 4000, 500, 4000, 500, 4000], amplitude: 225);
     }
     _nextPair();
   }
@@ -130,46 +128,6 @@ class _CountdownScreenState extends State<CountdownScreen> {
     });
   }
 
-/*/ start comment
-      // Increment guest
-      _currentGuest++;
-      _messageCount = 1;
-
-      // Skip if guest equals host
-      if (_currentGuest == _currentHost) {
-        _currentGuest++;
-      }
-
-      // If guest exceeds group size, move to next host
-      if (_currentGuest > widget.settings.groupSize) {
-        _currentHost++;
-        _currentGuest = (_currentHost + 1);//this was = 1;
-        _messageCount = 2;
-
-        // Skip if guest would equal host
-        if (_currentGuest == _currentHost) {
-          _currentGuest++;
-        }
-
-        // If we've completed all hosts
-        if (_currentHost > widget.settings.groupSize) {
-          _currentHost = 1;
-          _currentGuest = 2;
-          
-          // Move to next position if enabled
-          if (_enabledPositions.isNotEmpty) {
-            if (_currentPosition >= _enabledPositions.length - 1) {
-              _roundComplete = true;
-              _resetPositions();
-            } else {
-              _currentPosition++;
-              _messageCount = 3;
-            }
-          }
-        }
-// end comment        */
-//      }
-
   void _toggleTimer() {
     if (_isRunning) {
       _timer.cancel();
@@ -201,6 +159,9 @@ class _CountdownScreenState extends State<CountdownScreen> {
         }
       }
     }
+    else {
+      Vibration.vibrate(pattern: [300, 500, 300, 1500], amplitude: 200);
+    }
   }
 
   @override
@@ -221,7 +182,7 @@ class _CountdownScreenState extends State<CountdownScreen> {
                     return Text(
                       position,
                       style: TextStyle(
-                        fontSize: index == _currentPosition ? 40 : 18, //changed from 32 to adding the index
+                        fontSize: index == _currentPosition ? 40 : 18, 
                         fontWeight: index == _currentPosition ? FontWeight.bold : FontWeight.normal,
                         color: index == _currentPosition ? Colors.green : Colors.black,
                         decoration: index < _currentPosition || _roundComplete ? TextDecoration.lineThrough : null,
@@ -341,6 +302,7 @@ class _CountdownScreenState extends State<CountdownScreen> {
           TextButton(
             child: const Text('OK'),
             onPressed: () {
+              Vibration.cancel();
               Navigator.of(context).pop();
               },
             ),
