@@ -3,6 +3,7 @@ import 'package:vibration/vibration.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../models/timer_settings.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
 
 class CountdownScreen extends StatefulWidget {
   final TimerSettings settings;
@@ -24,6 +25,7 @@ class _CountdownScreenState extends State<CountdownScreen> {
   //int _completedPairs = 0;
   bool _roundComplete = false;
   int _messageCount = 0;
+  FirebaseAnalytics analytics = FirebaseAnalytics.instance;
 
   @override
   void initState() {

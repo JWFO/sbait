@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../models/timer_settings.dart';
 import 'countdown_screen.dart';
 import '../widgets/app_drawer.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
 
 class SetupScreen extends StatefulWidget {
   const SetupScreen({super.key});
@@ -19,6 +20,7 @@ class _SetupScreenState extends State<SetupScreen> {
   bool topEnabled = false;
   bool bottomEnabled = false;
   bool alarmEnabled = true;
+  FirebaseAnalytics analytics = FirebaseAnalytics.instance;
 
   @override
   Widget build(BuildContext context) {
