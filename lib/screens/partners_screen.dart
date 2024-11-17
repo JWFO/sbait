@@ -4,14 +4,14 @@ import 'countdown_screen.dart';
 import '../widgets/app_drawer.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 
-class SetupScreen extends StatefulWidget {
-  const SetupScreen({super.key});
+class PartnersScreen extends StatefulWidget {
+  const PartnersScreen({super.key});
 
   @override
-  State<SetupScreen> createState() => _SetupScreenState();
+  State<PartnersScreen> createState() => _PartnersScreenState();
 }
 
-class _SetupScreenState extends State<SetupScreen> {
+class _PartnersScreenState extends State<PartnersScreen> {
   int groupSize = 3;
   int minutes = 0;
   int seconds = 15;
@@ -25,7 +25,7 @@ class _SetupScreenState extends State<SetupScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Shark Bait Setup')),
+      appBar: AppBar(title: const Text('Partners Setup')),
       drawer: const AppDrawer(),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -38,10 +38,10 @@ class _SetupScreenState extends State<SetupScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text('Group Size', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                    const Text('Partner Rounds', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [3, 4, 5].map((size) => 
+                      children: [2, 3, 4, 5].map((size) => 
                         ElevatedButton(
                           onPressed: () => setState(() => groupSize = size),
                           style: ElevatedButton.styleFrom(

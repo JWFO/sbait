@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class ContactScreen extends StatelessWidget {
   const ContactScreen({super.key});
 
@@ -37,7 +38,7 @@ class ContactScreen extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 8),
-                    Text(
+                    SelectableText(
                       'Email: feedback@w859.com\n\n'
                       //'Phone: 707-786-3883\n\n'
                       'Please send any requests for features or feedback about issues that you have found to the email above.'

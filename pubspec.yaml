@@ -12,17 +12,23 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
-  mailto: ^2.0.0
- # flutter_native_splash: ^2.4.2
+ # mailto: ^2.0.0
+ # url_launcher: ^6.3.1
   firebase_core: ^3.8.0
   vibration: ^2.0.1
   firebase_analytics: ^11.3.5
+ # flutter_native_splash: ^2.4.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
 
+android_12:
+  android_gravity: center
+
+flutter:
+  uses-material-design: true
 
 #flutter_native_splash:
  # color: "#B3B3B3"
@@ -30,9 +36,3 @@ dev_dependencies:
   #branding: assets/dart.png
   #branding_mode: bottom
   #branding_bottom_padding:24
-
-android_12:
-  android_gravity: center
-
-flutter:
-  uses-material-design: true
