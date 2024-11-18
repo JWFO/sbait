@@ -40,6 +40,18 @@ android {
             signingConfig = signingConfigs.debug
         }
     }
+
+    signingConfigs {
+        release {
+        storeFile file('keystore.jks')
+        keyAlias 'key'
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+        }
+    }
 }
 
 flutter {

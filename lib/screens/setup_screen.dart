@@ -13,8 +13,8 @@ class SetupScreen extends StatefulWidget {
 
 class _SetupScreenState extends State<SetupScreen> {
   int groupSize = 3;
-  int minutes = 0;
-  int seconds = 15;
+  int minutes = 1;
+  int seconds = 30;
   bool positionsEnabled = false;
   bool neutralEnabled = false;
   bool topEnabled = false;
