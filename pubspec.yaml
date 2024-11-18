@@ -3,7 +3,7 @@ description: Created to assist with Shark Bait groups during wrestling practice.
 publish_to: 'none'
 #learn : Shark Bait
 
-version: 1.0.0+1
+version: 1.0.0+2
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
