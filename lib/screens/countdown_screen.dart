@@ -67,9 +67,9 @@ class _CountdownScreenState extends State<CountdownScreen> {
   void _handleTimerComplete() {
     _timer.cancel();
     if (widget.settings.alarmEnabled) {
-      Vibration.vibrate(pattern: [500, 1500, 500, 4000, 500, 4000, 500, 4000, 500, 4000], amplitude: 225);
       HapticFeedback.heavyImpact();
        const Duration(milliseconds: 1500);
+      Vibration.vibrate(pattern: [500, 1500, 500, 4000/*, 500, 4000, 500, 4000, 500, 4000*/], amplitude: 225);
     }
     _nextPair();
   }
@@ -337,6 +337,7 @@ class _CountdownScreenState extends State<CountdownScreen> {
           TextButton(
             child: const Text('OK'),
             onPressed: () {
+              Vibration.cancel();
               Navigator.of(context).pop();
               },
             ),
@@ -368,6 +369,7 @@ class _CountdownScreenState extends State<CountdownScreen> {
             TextButton(
               child: const Text('OK'),
               onPressed: () {
+                Vibration.cancel();
                 Navigator.of(context).pop();
               },
             ),

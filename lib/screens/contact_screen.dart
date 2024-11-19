@@ -41,7 +41,8 @@ class ContactScreen extends StatelessWidget {
                       'Email: feedback@w859.com\n\n'
                       //'Phone: 707-786-3883\n\n'
                       'Please send any requests for features or feedback about issues that you have found to the email above.'
-                      ' ',
+                      '\n\n'
+                      'Copyright © 2024 W859',
                       style: TextStyle(fontSize: 16),
                     ),
                   ],
