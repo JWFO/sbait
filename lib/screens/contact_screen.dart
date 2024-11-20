@@ -40,9 +40,7 @@ class ContactScreen extends StatelessWidget {
                     SelectableText(
                       'Email: feedback@w859.com\n\n'
                       //'Phone: 707-786-3883\n\n'
-                      'Please send any requests for features or feedback about issues that you have found to the email above.'
-                      '\n\n'
-                      'Copyright © 2024 W859',
+                      'Please send any requests for features or feedback about issues that you have found to the email above.',
                       style: TextStyle(fontSize: 16),
                     ),
                   ],
