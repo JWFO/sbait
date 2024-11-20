@@ -40,7 +40,8 @@ class RulesScreen extends StatelessWidget {
               'Enabling Alerts will give you a pop-up alert for the follow situations:\n'
               'When the time is up to switch SHARKS.\n'
               'When it is time to switch SHARK BAIT.\n'
-              'When the round is over and the groups should switch to the next Position (if positions are enabled).\n\n',
+              'When the round is over and the groups should switch to the next Position (if positions are enabled).\n\n'
+              '\n\nCopyright © 2024 W859',
               style: TextStyle(fontSize: 16),
             ),
           ],
